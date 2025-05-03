@@ -1,36 +1,59 @@
-body {
-  background-color: #282828;
-  color: #ebdbb2;
-  font-family: "JetBrains Mono", monospace;
+/* Catppuccin Mocha Color Palette */
+:root {
+  --base: #1e1e2e;
+  --text: #cdd6f4;
+  --blue: #89b4fa;
+  --lavender: #b4befe;
+  --sapphire: #74c7ec;
+  --sky: #89dceb;
+  --teal: #94e2d5;
+  --green: #a6e3a1;
+  --yellow: #f9e2af;
+  --peach: #fab387;
+  --maroon: #eba0ac;
+  --red: #f38ba8;
+  --pink: #f5c2e7;
+  --mauve: #cba6f7;
 }
 
-img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
+body {
+  background-color: var(--base);
+  color: var(--text);
+  font-family: "Spline Sans Mono", monospace;
+  line-height: 1.6;
+}
+
+strong {
+  color: var(--mauve);
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--lavender);
+  text-decoration: underline;
+}
+
+code {
+  font-family: "Spline Sans Mono", monospace;
+  color: var(--green);
 }
 
 h1 {
-  color: #98971a;
-  text-decoration: underline;
+  color: var(--red);
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #b8bb26;
-}
-a,
-a:visited,
-a:hover,
-a:active {
-  color: #d79921;
+h2 {
+  color: var(--peach);
 }
 
-small {
-  color: #458588;
-  text-decoration: underline;
-  cursor: pointer;
+td a {
+  padding-left: 0.625rem;
+}
+
+.contact-type {
+  text-align: right;
 }
